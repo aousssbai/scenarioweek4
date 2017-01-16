@@ -4,7 +4,7 @@ ob_start();
 
 
 
-$db = new PDO('mysql:host=localhost;dbname=blog', 'root', 'root');
+$db = new PDO("sqlsrv:server = tcp:blog2.database.windows.net,1433; Database = blog", "aouss", "Karlcfkh97");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
