@@ -1,0 +1,52 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Admin - Users</title>
+  <link rel="stylesheet" href="../style/normalize.css">
+  <link rel="stylesheet" href="../style/main.css">
+  <script language="JavaScript" type="text/javascript">
+  function deluser(id, title)
+  {
+    if (confirm("Are you sure you want to delete '" + title + "'"))
+    {
+      window.location.href = 'users.php?deluser=' + id;
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div id="wrapper">
+
+  
+
+  <table>
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+  
+
+        <td>
+          <a href="edit-user.php?id=<?php echo $row['memberID'];?>">Edit</a> 
+          
+        </td>
+        
+        
+
+      }
+
+    
+  </table>
+
+  <p><a href='add-user.php'>Add User</a></p>
+
+</div>
+
+</body>
+</html>
